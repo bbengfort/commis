@@ -1,0 +1,3 @@
+Commis is a library to create command line utilities like git or django-admin where there is a single command that implements many subcommands. Internally, Commis uses the argparse module to create subparsers and parse command line options. However, much like the Django management utility, it exposes an API that allows you to write command classes and create very simple console programs.
+
+For more, please see the full documentation at: http://commis.readthedocs.org/

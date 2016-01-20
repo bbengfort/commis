@@ -1,2 +1,13 @@
 site_name: Commis
+site_url: http://commis.readthedocs.org/
+repo_name: GitHub
+repo_url: https://github.com/bbengfort/commis
+site_description: Create command line applications like Django management commands.
+site_author: Benjamin Bengfort
+copyright: '<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Documentation</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0 License</a>.'
 theme: readthedocs
+
+pages:
+- 'Introduction': 'index.md'
+- 'Tutorial': 'tutorial.md'
+- 'About': 'about.md'
