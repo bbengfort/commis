@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/bbengfort/commis.png?label=ready&title=Ready)](https://waffle.io/bbengfort/commis)
 # Commis
 
 **Create command line applications like Django management commands.**
