@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/bbengfort/commis.svg?branch=master)](https://travis-ci.org/bbengfort/commis)
 [![Coverage Status](https://coveralls.io/repos/github/bbengfort/commis/badge.svg?branch=master)](https://coveralls.io/github/bbengfort/commis?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/commis/badge/?version=latest)](http://commis.readthedocs.org/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/commis.svg)](https://badge.fury.io/py/commis)
+[![PyPI downloads](https://img.shields.io/pypi/dm/confire.svg)](https://pypi.python.org/pypi/commis/)
 [![Stories in Ready](https://badge.waffle.io/bbengfort/commis.png?label=ready&title=Ready)](https://waffle.io/bbengfort/commis)
 
 [![Pâte de fruit (gominolas) de laranxa sanguina][gominolas.jpg]][gominolas_flickr]
@@ -169,17 +171,17 @@ The release versions that are sent to the Python package index are also tagged i
 
 The versioning uses a three part version system, "a.b.c" - "a" represents a major release that may not be backwards compatible. "b" is incremented on minor releases that may contain extra features, but are backwards compatible. "c" releases are bug fixes or other micro changes that developers should feel free to immediately update to.
 
-### v0.2 pending release
+### Milestone 0.2 (pending release)
 
 * **tag**: v0.2
 * **deployment**: pending
 * **commit**: (latest)
 
-### v0.1
+### Version 0.1
 
 * **tag**: v0.1
 * **deployment**: January 20, 2016
-* **commit**: [NOT YET READY]
+* **commit**: [35ca6df](https://github.com/bbengfort/commis/commit/35ca6df11a51503b50466c7ec2b0c44103778802)
 
 This is the initial release, which will simply bring over all the code and features that have previously been implemented in other locations. This release has also been published to PyPI and has some initial documentation.
 
