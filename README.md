@@ -1,12 +1,15 @@
-[![Stories in Ready](https://badge.waffle.io/bbengfort/commis.png?label=ready&title=Ready)](https://waffle.io/bbengfort/commis)
 # Commis
 
 **Create command line applications like Django management commands.**
 
 [![Build Status](https://travis-ci.org/bbengfort/commis.svg?branch=master)](https://travis-ci.org/bbengfort/commis)
 [![Coverage Status](https://coveralls.io/repos/github/bbengfort/commis/badge.svg?branch=master)](https://coveralls.io/github/bbengfort/commis?branch=master)
+[![Documentation Status](https://readthedocs.org/projects/commis/badge/?version=latest)](http://commis.readthedocs.org/en/latest/?badge=latest)
+[![Stories in Ready](https://badge.waffle.io/bbengfort/commis.png?label=ready&title=Ready)](https://waffle.io/bbengfort/commis)
 
 [![Pâte de fruit (gominolas) de laranxa sanguina][gominolas.jpg]][gominolas_flickr]
+
+Read the full documentation at [http://commis.readthedocs.org/](http://commis.readthedocs.org/).
 
 ## About ##
 
