@@ -51,10 +51,16 @@ The release versions that are sent to the Python package index are also tagged i
 
 The versioning uses a three part version system, "a.b.c" - "a" represents a major release that may not be backwards compatible. "b" is incremented on minor releases that may contain extra features, but are backwards compatible. "c" releases are bug fixes or other micro changes that developers should feel free to immediately update to.
 
-### v0.1.0 pending release
+### v0.2 pending release
 
-* **tag**: v0.1.0
+* **tag**: v0.2
 * **deployment**: pending
 * **commit**: (latest)
 
-This is the initial release, which will simply bring over all the code and features that have previously been implemented in other locations.
+### v0.1
+
+* **tag**: v0.1
+* **deployment**: January 20, 2016
+* **commit**: [NOT YET READY]
+
+This is the initial release, which will simply bring over all the code and features that have previously been implemented in other locations. This release has also been published to PyPI and has some initial documentation.
