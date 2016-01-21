@@ -101,4 +101,6 @@ class Command(object):
         will be passed the arguments that are parsed from the command line
         using argparse.
         """
-        raise NotImplementedError("Console utilies should implement.")
+        raise NotImplementedError(
+            "subclasses of Command must provide a handle() method"
+        )
