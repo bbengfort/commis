@@ -20,6 +20,7 @@ Create command line applications like Django management commands.
 from .command import Command
 from .program import ConsoleProgram
 from .version import get_version
+from .labeled import LabelCommand
 
 ##########################################################################
 ## Package Version

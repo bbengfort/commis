@@ -4,9 +4,8 @@
 
 [![Build Status](https://travis-ci.org/bbengfort/commis.svg?branch=master)](https://travis-ci.org/bbengfort/commis)
 [![Coverage Status](https://coveralls.io/repos/github/bbengfort/commis/badge.svg?branch=master)](https://coveralls.io/github/bbengfort/commis?branch=master)
-[![Documentation Status](https://readthedocs.org/projects/commis/badge/?version=latest)](http://commis.readthedocs.org/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/commis.svg)](https://badge.fury.io/py/commis)
-[![PyPI downloads](https://img.shields.io/pypi/dm/confire.svg)](https://pypi.python.org/pypi/commis/)
+[![Documentation Status](https://readthedocs.org/projects/commis/badge/?version=latest)](http://commis.readthedocs.org/en/latest/?badge=latest)
 [![Stories in Ready](https://badge.waffle.io/bbengfort/commis.png?label=ready&title=Ready)](https://waffle.io/bbengfort/commis)
 
 [![Pâte de fruit (gominolas) de laranxa sanguina][gominolas.jpg]][gominolas_flickr]

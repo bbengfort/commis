@@ -11,3 +11,4 @@ pages:
 - 'Introduction': 'index.md'
 - 'Tutorial': 'tutorial.md'
 - 'About': 'about.md'
+- 'API Guide': 'api.md'
