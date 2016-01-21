@@ -24,7 +24,7 @@ from .command import Command
 ## LabelCommand
 ##########################################################################
 
-class LabelCommand(Comamnd):
+class LabelCommand(Command):
     """
     A management command which takes on or more arbitrary labels and does
     something with each of them, similar to  Django's LabelCommand.
