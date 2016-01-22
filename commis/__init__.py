@@ -21,7 +21,7 @@ from .program import ConsoleProgram
 from .command import Command
 from .labeled import LabelCommand
 from .version import get_version
-from .color   import color_format
+from .color   import colorize
 
 
 ##########################################################################

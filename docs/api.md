@@ -6,6 +6,24 @@ The `commis` module aggregates Commis' most used comonents into a single namespa
 
 The following tables outline a rough sketch of the components involved in Commis. Use this guide to plan development or to find tools that are not explicitly referenced in the documentation.
 
+### Color
+
+The color module wraps [colorama](https://pypi.python.org/pypi/colorama) to provide cross-platform colored terminal text. While not strictly necessary, we have decided to integrate it into `commis` to set this CLI library apart from others. Plus we routinely integrate colors into our console utilities.
+
+Component  | Description
+---------- | -------------------------------------------------------------
+`colorize` | Implements string formatting and colors the string with specified ANSI color.
+`format`   | Alias for `colorize`. Expected usage is to import the color module (`color.format`)
+`BLACK`/`LIGHT_BLACK` | Alias for `colorama.Fore.BLACK` and `colorama.Fore.LIGHTBLACK_EX`
+`RED`/`LIGHT_RED` | Alias for `colorama.Fore.RED` and `colorama.Fore.LIGHTRED_EX`
+`GREEN`/`LIGHT_GREEN` | Alias for `colorama.Fore.GREEN` and `colorama.Fore.LIGHTGREEN_EX`
+`YELLOW`/`LIGHT_YELLOW` | Alias for `colorama.Fore.YELLOW` and `colorama.Fore.LIGHTYELLOW_EX`
+`BLUE`/`LIGHT_BLUE` | Alias for `colorama.Fore.BLUE` and `colorama.Fore.LIGHTBLUE_EX`
+`MAGENTA`/`LIGHT_MAGENTA` | Alias for `colorama.Fore.MAGENTA` and `colorama.Fore.LIGHTMAGENTA_EX`
+`CYAN`/`LIGHT_CYAN` | Alias for `colorama.Fore.CYAN` and `colorama.Fore.LIGHTCYAN_EX`
+`WHITE`/`LIGHT_WHITE` | Alias for `colorama.Fore.WHITE` and `colorama.Fore.LIGHTWHITE_EX`
+`RESET` | Alias for `colorama.Fore.RESET`
+
 ### Command
 
 The command module contains the default parsing and command behavior. `Command` subclasses are the primary interface for using Commis.

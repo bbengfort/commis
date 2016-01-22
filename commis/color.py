@@ -49,15 +49,14 @@ LIGHT_WHITE   = colorama.Fore.LIGHTWHITE_EX
 ## Helper Functions
 ##########################################################################
 
-def color_format(string, color, *args, **kwargs):
+def colorize(string, color, *args, **kwargs):
     """
-    Implements string formating along with color specified in colorama.Fore
+    Implements string formatting along with color specified in colorama.Fore
     """
     string = string.format(*args, **kwargs)
     return color + string + colorama.Fore.RESET
 
-# Aliases for color_format. Expected usage:
+# Alias for colorize. Expected usage:
 #   >>> from commis import color
 #   >>> color.format("{}", color.BLUE, "hello world!")
-format   = color_format
-colorize = color_format
+format   = colorize
