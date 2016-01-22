@@ -35,10 +35,18 @@ class LabelCommand(Command):
 
     label = 'label'
 
+    def __init__(self, **kwargs):
+        """
+        Initialize the label command.
+        """
+        self.label    = kwargs.get('label', self.__class__.label)
+        super(LabelCommand, self).__init__(**kwargs)
+
     def add_arguments(self):
         """
         Add the label argument by default, no need to specify it in args.
         """
+        super(LabelCommand, self).add_arguments()
         self.parser.add_argument('labels', metavar=self.label, nargs="+")
 
     def handle(self, args):
