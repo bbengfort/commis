@@ -19,10 +19,12 @@ Implements a complete console program.
 
 import os
 import sys
-
+import colorama
 import argparse
 import traceback
 
+from commis import color
+from commis.exceptions import ConsoleError
 
 ##########################################################################
 ## Helper functions
@@ -60,6 +62,9 @@ class ConsoleProgram(object):
         self._parser     = None
         self._subparsers = None
 
+        ## Init colors
+        colorama.init(autoreset=True)
+
     @property
     def parser(self):
         """
@@ -93,7 +98,9 @@ class ConsoleProgram(object):
         """
         command = command()
         if command.name in self.commands:
-            raise ValueError("Command %s already registered!" % command.name)
+            raise ConsoleError(
+                "Command %s already registered!" % command.name
+            )
 
         command.create_parser(self.subparsers)
         self.commands[command.name] = command
@@ -126,19 +133,24 @@ class ConsoleProgram(object):
         """
         Entry point to the execution of the program.
         """
+        # Ensure that we have commands registered
+        if not self.commands or self._parser is None:
+            raise NotImplementedError(
+                "No commands registered with this program!"
+            )
 
         # Handle input from the command line
         args = self.parser.parse_args()                # Parse the arguments
 
         try:
-            if not hasattr(args, 'func'):
-                raise NotImplementedError("No commands registered with this program!")
 
             handle_default_args(args)                  # Handle the default args
             msg = "{}\n".format(args.func(args))       # Call the default function
-            self.parser.exit(0, msg)                   # Exit cleanly with message
+            self.exit(0, msg)                          # Exit cleanly with message
 
         except Exception as e:
             if hasattr(args, 'traceback') and args.traceback:
                 traceback.print_exc()
-            self.parser.error(str(e))                  # Exit with error
+
+            msg = color.format(str(e), color.RED)
+            self.exit(1, msg)                          # Exit with error

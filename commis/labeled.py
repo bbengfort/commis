@@ -24,7 +24,7 @@ from .command import Command
 ## LabelCommand
 ##########################################################################
 
-class LabelCommand(Comamnd):
+class LabelCommand(Command):
     """
     A management command which takes on or more arbitrary labels and does
     something with each of them, similar to  Django's LabelCommand.
@@ -35,10 +35,18 @@ class LabelCommand(Comamnd):
 
     label = 'label'
 
+    def __init__(self, **kwargs):
+        """
+        Initialize the label command.
+        """
+        self.label    = kwargs.get('label', self.__class__.label)
+        super(LabelCommand, self).__init__(**kwargs)
+
     def add_arguments(self):
         """
         Add the label argument by default, no need to specify it in args.
         """
+        super(LabelCommand, self).add_arguments()
         self.parser.add_argument('labels', metavar=self.label, nargs="+")
 
     def handle(self, args):

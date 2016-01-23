@@ -21,7 +21,7 @@ import commis
 
 from commis import Command
 from commis import ConsoleProgram
-
+from commis import color
 
 ##########################################################################
 ## An example Command
@@ -36,7 +36,7 @@ class GreetingCommand(Command):
             'type': str,
             'default': 'english',
             'metavar': 'LANG',
-            'choices': ['english', 'french', 'spanish'],
+            'choices': ['english', 'french', 'spanish', 'error'],
             'help': 'the language of the greeting',
         },
         'name': {
@@ -77,8 +77,8 @@ COMMANDS    = [
 
 class ExampleUtility(ConsoleProgram):
 
-    description = DESCRIPTION
-    epilog      = EPILOG
+    description = color.format(DESCRIPTION, color.CYAN)
+    epilog      = color.format(EPILOG, color.LIGHT_MAGENTA)
     version     = commis.__version__
 
     @classmethod
