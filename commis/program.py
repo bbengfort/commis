@@ -133,15 +133,16 @@ class ConsoleProgram(object):
         """
         Entry point to the execution of the program.
         """
+        # Ensure that we have commands registered
+        if not self.commands or self._parser is None:
+            raise NotImplementedError(
+                "No commands registered with this program!"
+            )
 
         # Handle input from the command line
         args = self.parser.parse_args()                # Parse the arguments
 
         try:
-            if not hasattr(args, 'func'):
-                raise ConsoleError(
-                    "No commands registered with this program!"
-                )
 
             handle_default_args(args)                  # Handle the default args
             msg = "{}\n".format(args.func(args))       # Call the default function
