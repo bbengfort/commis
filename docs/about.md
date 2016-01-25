@@ -51,16 +51,18 @@ The release versions that are sent to the Python package index are also tagged i
 
 The versioning uses a three part version system, "a.b.c" - "a" represents a major release that may not be backwards compatible. "b" is incremented on minor releases that may contain extra features, but are backwards compatible. "c" releases are bug fixes or other micro changes that developers should feel free to immediately update to.
 
-### v0.2 pending release
+### Version 0.2
 
 * **tag**: v0.2
-* **deployment**: pending
-* **commit**: (latest)
+* **deployment**: January 25, 2016
+* **commit**: (see tag)
 
-### v0.1
+Solidified the Commis library by improving the test suite and the documentation. I've also included a couple of modules that were big helps in the past: a color library that wraps colorama, and a LabelCommand. This is really the official "first" version that I feel is production ready.
+
+### Version 0.1
 
 * **tag**: v0.1
 * **deployment**: January 20, 2016
-* **commit**: [NOT YET READY]
+* **commit**: [35ca6df](https://github.com/bbengfort/commis/commit/35ca6df11a51503b50466c7ec2b0c44103778802)
 
 This is the initial release, which will simply bring over all the code and features that have previously been implemented in other locations. This release has also been published to PyPI and has some initial documentation.
