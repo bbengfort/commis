@@ -174,6 +174,14 @@ The versioning uses a three part version system, "a.b.c" - "a" represents a majo
 
 This milestone will add Python 3 compatibility as well as new features like Confire integration and progress bars. Work for this milestone hasn't been set yet, so please feel to contribute issues and ideas!
 
+### Version 0.3
+
+* **tag**: v0.3
+* **deployment**: June 2, 2016
+* **commit**: [6e603e4](https://github.com/bbengfort/commis/commit/6e603e43e711b933b0a3ee2db27a709458a10c25)
+
+Added Python 3.5 compatibility primarily by fixing the `--version` argument in  the `argparse` library (apparently a weirdly supported feature from old  versions of Python 2. Also updated tests with some capture for different import paths as well as adding six for testing 2to3 compatibility. 
+
 ### Version 0.2
 
 * **tag**: v0.2
