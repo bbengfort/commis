@@ -55,7 +55,7 @@ The versioning uses a three part version system, "a.b.c" - "a" represents a majo
 
 * **tag**: v0.2
 * **deployment**: January 25, 2016
-* **commit**: (see tag)
+* **commit**: [90e2275](https://github.com/bbengfort/commis/commit/90e2275214f23d9da4e9e632df88c052bb890389)
 
 Solidified the Commis library by improving the test suite and the documentation. I've also included a couple of modules that were big helps in the past: a color library that wraps colorama, and a LabelCommand. This is really the official "first" version that I feel is production ready.
 
