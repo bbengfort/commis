@@ -74,9 +74,14 @@ class ConsoleProgram(object):
             apkw = {
                 'description': self.description,
                 'epilog':      self.epilog,
-                'version':     self.version,
             }
             self._parser = argparse.ArgumentParser(**apkw)
+
+            # For Python 3 add version as a default command
+            self._parser.add_argument(
+                '-v', '--version', action='version', version="%(prog)s {}".format(self.version)
+            )
+
         return self._parser
 
     @property

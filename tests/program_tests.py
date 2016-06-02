@@ -18,15 +18,20 @@ Testing the primary console utility for commis.
 ##########################################################################
 
 import sys
+import six
 import argparse
 import unittest
 
-from cStringIO import StringIO
 from commis.command import Command
 from commis.command import DefaultParser
 from commis.program import handle_default_args
 from commis.program import ConsoleProgram
 from commis.exceptions import ConsoleError
+
+try:
+    from cStringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 try:
     from unittest import mock
@@ -133,7 +138,7 @@ class ConsoleProgramTests(unittest.TestCase):
         """
         Returns the contents of the StringIO specified.
         """
-        if isinstance(stream, basestring):
+        if isinstance(stream, six.string_types):
             stream = {
                 'stdout': sys.stdout,
                 'stderr': sys.stderr,
