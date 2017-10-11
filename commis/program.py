@@ -78,9 +78,11 @@ class ConsoleProgram(object):
             self._parser = argparse.ArgumentParser(**apkw)
 
             # For Python 3 add version as a default command
-            self._parser.add_argument(
-                '-v', '--version', action='version', version="%(prog)s {}".format(self.version)
-            )
+            if self.version:
+                self._parser.add_argument(
+                    '-v', '--version', action='version',
+                    version="%(prog)s {}".format(self.version),
+                )
 
         return self._parser
 
@@ -150,7 +152,13 @@ class ConsoleProgram(object):
         try:
 
             handle_default_args(args)                  # Handle the default args
-            msg = "{}\n".format(args.func(args))       # Call the default function
+
+            if not hasattr(args, 'func'):              # Handle no subcommands
+                self.parser.print_help()
+                self.exit(0)
+
+            msg = args.func(args)                      # Call the default function
+            msg = "{}\n".format(msg) if msg else ''    # Format the message
             self.exit(0, msg)                          # Exit cleanly with message
 
         except Exception as e:
