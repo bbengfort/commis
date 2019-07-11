@@ -86,7 +86,8 @@ class ExampleUtility(ConsoleProgram):
 
     description = DESCRIPTION
     epilog      = EPILOG
-    version     = commis.__version__
+    VERSION     = "1.0"
+    version     = VERSION
 
     @classmethod
     def load(klass, commands=COMMANDS):
