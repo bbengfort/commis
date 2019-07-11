@@ -23,7 +23,7 @@ import unittest
 ## Module Constants
 ##########################################################################
 
-TEST_VERSION = "0.4" ## Also the expected version onf the package
+TEST_VERSION = "0.5" ## Also the expected version onf the package
 
 ##########################################################################
 ## Test Cases
@@ -39,7 +39,7 @@ class InitializationTest(unittest.TestCase):
 
     def test_import(self):
         """
-        Can import mosaic
+        Can import commis
         """
         try:
             import commis

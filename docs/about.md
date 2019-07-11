@@ -45,40 +45,43 @@ A commis is a basic chef in larger kitchens who works under a chef de partie to 
 
 This package is closely related to the [Confire](https://github.com/bbengfort/confire) configuration tool, hence the name in the same vein &mdash; French cooking words. In this case, a commis is someone to whom orders are given (commands) and seemed an appropriate term for a package whose function is accept and execute commands.
 
-## Changelog
+## Releases
 
 The release versions that are sent to the Python package index are also tagged in Github. You can see the tags through the Github web application and download the tarball of the version you'd like. Additionally PyPI will host the various releases of Commis.
 
 The versioning uses a three part version system, "a.b.c" - "a" represents a major release that may not be backwards compatible. "b" is incremented on minor releases that may contain extra features, but are backwards compatible. "c" releases are bug fixes or other micro changes that developers should feel free to immediately update to.
 
+### Version 0.5
+
+* **tag**: [v0.5](https://github.com/bbengfort/commis/releases/tag/v0.5)
+* **deployment**: July 11, 2019
+
+Updated the colorama requirements to `colorma>=0.3.6` in order to better support other console utilities that utilize newer version of colorama. Updates to documentation and examples.
+
 ### Version 0.4
 
-* **tag**: v0.4
+* **tag**: [v0.4](https://github.com/bbengfort/commis/releases/tag/v0.4)
 * **deployment**: October 11, 2017
-* **commit**: [becdeaf](https://github.com/bbengfort/commis/commit/becdeaf07a5128973716fbe0c3f4aab80e13b148)
 
 Implemented some better handling for Python 3 argparse, continuing migration from Python 2.
 
 ### Version 0.3
 
-* **tag**: v0.3
+* **tag**: [v0.3](https://github.com/bbengfort/commis/releases/tag/v0.3)
 * **deployment**: June 2, 2016
-* **commit**: [6e603e4](https://github.com/bbengfort/commis/commit/6e603e43e711b933b0a3ee2db27a709458a10c25)
 
 Added Python 3.5 compatibility primarily by fixing the `--version` argument in  the `argparse` library (apparently a weirdly supported feature from old  versions of Python 2. Also updated tests with some capture for different import paths as well as adding six for testing 2to3 compatibility.
 
 ### Version 0.2
 
-* **tag**: v0.2
+* **tag**: [v0.2](https://github.com/bbengfort/commis/releases/tag/v0.2)
 * **deployment**: January 25, 2016
-* **commit**: [90e2275](https://github.com/bbengfort/commis/commit/90e2275214f23d9da4e9e632df88c052bb890389)
 
 Solidified the Commis library by improving the test suite and the documentation. I've also included a couple of modules that were big helps in the past: a color library that wraps colorama, and a LabelCommand. This is really the official "first" version that I feel is production ready.
 
 ### Version 0.1
 
-* **tag**: v0.1
+* **tag**: [v0.1](https://github.com/bbengfort/commis/releases/tag/v0.4)
 * **deployment**: January 20, 2016
-* **commit**: [35ca6df](https://github.com/bbengfort/commis/commit/35ca6df11a51503b50466c7ec2b0c44103778802)
 
 This is the initial release, which will simply bring over all the code and features that have previously been implemented in other locations. This release has also been published to PyPI and has some initial documentation.

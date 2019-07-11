@@ -67,6 +67,7 @@ The `handle` method should accept args as its only argument, and should return a
 Once you have your commands, you need to create and define a console utility to execute them. Simply subclass `ConsoleProgram` with your definition as follows:
 
 ```python
+VERSION     = "1.0"
 DESCRIPTION = "Inspects the mimetype distribution of a directory."
 EPILOG      = "Created for scientific purposes and not diagnostic ones."
 COMMANDS    = [
@@ -77,7 +78,7 @@ class ExampleUtility(ConsoleProgram):
 
     description = DESCRIPTION
     epilog      = EPILOG
-    version     = commis.__version__
+    version     = VERSION
 
     @classmethod
     def load(klass, commands=COMMANDS):
