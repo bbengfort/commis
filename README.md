@@ -76,6 +76,7 @@ The `handle` method should accept args as its only argument, and should return a
 Once you have your commands, you need to create and define a console utility to execute them. Simply subclass `ConsoleProgram` with your definition as follows:
 
 ```python
+VERSION     = "1.0"
 DESCRIPTION = "Inspects the mimetype distribution of a directory."
 EPILOG      = "Created for scientific purposes and not diagnostic ones."
 COMMANDS    = [
@@ -86,7 +87,6 @@ class ExampleUtility(ConsoleProgram):
 
     description = DESCRIPTION
     epilog      = EPILOG
-    VERSION     = "1.0"
     version     = VERSION
 
     @classmethod
@@ -160,43 +160,17 @@ This package is closely related to the [Confire](https://github.com/bbengfort/co
 
 The photo used in this README, &ldquo;[Pâte de fruit (gominolas) de laranxa sanguina][gominolas_flickr]&rdquo; by [Receitasparatodososdias](https://www.flickr.com/photos/100127130@N05/) is used under a [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/) creative commons license.
 
-### Throughput
-
-[![Throughput Graph](https://graphs.waffle.io/bbengfort/commis/throughput.svg)](https://waffle.io/bbengfort/commis/metrics)
-
-## Changelog
+## Releases
 
 The release versions that are sent to the Python package index are also tagged in Github. You can see the tags through the Github web application and download the tarball of the version you'd like. Additionally PyPI will host the various releases of commis.
 
 The versioning uses a three part version system, "a.b.c" - "a" represents a major release that may not be backwards compatible. "b" is incremented on minor releases that may contain extra features, but are backwards compatible. "c" releases are bug fixes or other micro changes that developers should feel free to immediately update to.
 
-### Milestone 0.3
-
-This milestone will add Python 3 compatibility as well as new features like Confire integration and progress bars. Work for this milestone hasn't been set yet, so please feel to contribute issues and ideas!
-
-### Version 0.3
-
-* **tag**: v0.3
-* **deployment**: June 2, 2016
-* **commit**: [6e603e4](https://github.com/bbengfort/commis/commit/6e603e43e711b933b0a3ee2db27a709458a10c25)
-
-Added Python 3.5 compatibility primarily by fixing the `--version` argument in  the `argparse` library (apparently a weirdly supported feature from old  versions of Python 2. Also updated tests with some capture for different import paths as well as adding six for testing 2to3 compatibility.
-
-### Version 0.2
-
-* **tag**: v0.2
-* **deployment**: January 25, 2016
-* **commit**: [90e2275](https://github.com/bbengfort/commis/commit/90e2275214f23d9da4e9e632df88c052bb890389)
-
-Solidified the Commis library by improving the test suite and the documentation. I've also included a couple of modules that were big helps in the past: a color library that wraps colorama, and a LabelCommand. This is really the official "first" version that I feel is production ready.
-
-### Version 0.1
-
-* **tag**: v0.1
-* **deployment**: January 20, 2016
-* **commit**: [35ca6df](https://github.com/bbengfort/commis/commit/35ca6df11a51503b50466c7ec2b0c44103778802)
-
-This is the initial release, which will simply bring over all the code and features that have previously been implemented in other locations. This release has also been published to PyPI and has some initial documentation.
+- [Version 0.5](https://github.com/bbengfort/commis/releases/tag/v0.5)
+- [Version 0.4](https://github.com/bbengfort/commis/releases/tag/v0.4)
+- [Version 0.3](https://github.com/bbengfort/commis/releases/tag/v0.3)
+- [Version 0.2](https://github.com/bbengfort/commis/releases/tag/v0.2)
+- [Version 0.1](https://github.com/bbengfort/commis/releases/tag/v0.1)
 
 <!-- References -->
 [gominolas.jpg]: docs/img/gominolas.jpg

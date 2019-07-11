@@ -69,6 +69,7 @@ class GreetingCommand(Command):
 ## Utility Description
 ##########################################################################
 
+VERSION     = "1.0"
 DESCRIPTION = "Inspects the mimetype distribution of a directory."
 EPILOG      = "Created for scientific purposes and not diagnostic ones."
 COMMANDS    = [
@@ -83,7 +84,7 @@ class ExampleUtility(ConsoleProgram):
 
     description = color.format(DESCRIPTION, color.CYAN)
     epilog      = color.format(EPILOG, color.LIGHT_MAGENTA)
-    version     = commis.__version__
+    version     = VERSION
 
     @classmethod
     def load(klass, commands=COMMANDS):

@@ -24,7 +24,7 @@ $ project
 ├── foo
 |   ├── __init__.py
 |   ├── console
-|   |   ├── commands    
+|   |   ├── commands
 |   |   |   ├── __init__.py
 |   |   |   ├── build.py
 |   |   |   └── serve.py
@@ -195,7 +195,7 @@ class MyCommand(Command):
 
     def handle(self, args):
         raise ConsoleError("I'm sorry, I cannot do that, Dave.")
-```        
+```
 
 The `--pythonpath` option allows you to append paths to `sys.path` to include Python code that is not in your site-packages. This is also good for development and for tools that are intended for developers as it helps avoid import errors.
 
