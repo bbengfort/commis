@@ -1,5 +1,5 @@
 # Dependencies
-colorama==0.3.6
+colorama>=0.3.6
 
 # Testing and Development
 #nose==1.3.7
