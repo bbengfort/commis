@@ -6,7 +6,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/bbengfort/commis/badge.svg?branch=master)](https://coveralls.io/github/bbengfort/commis?branch=master)
 [![PyPI version](https://badge.fury.io/py/commis.svg)](https://badge.fury.io/py/commis)
 [![Documentation Status](https://readthedocs.org/projects/commis/badge/?version=latest)](http://commis.readthedocs.org/en/latest/?badge=latest)
-[![Stories in Ready](https://badge.waffle.io/bbengfort/commis.png?label=ready&title=Ready)](https://waffle.io/bbengfort/commis)
 
 [![Pâte de fruit (gominolas) de laranxa sanguina][gominolas.jpg]][gominolas_flickr]
 
@@ -180,7 +179,7 @@ This milestone will add Python 3 compatibility as well as new features like Conf
 * **deployment**: June 2, 2016
 * **commit**: [6e603e4](https://github.com/bbengfort/commis/commit/6e603e43e711b933b0a3ee2db27a709458a10c25)
 
-Added Python 3.5 compatibility primarily by fixing the `--version` argument in  the `argparse` library (apparently a weirdly supported feature from old  versions of Python 2. Also updated tests with some capture for different import paths as well as adding six for testing 2to3 compatibility. 
+Added Python 3.5 compatibility primarily by fixing the `--version` argument in  the `argparse` library (apparently a weirdly supported feature from old  versions of Python 2. Also updated tests with some capture for different import paths as well as adding six for testing 2to3 compatibility.
 
 ### Version 0.2
 
